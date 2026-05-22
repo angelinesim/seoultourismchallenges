@@ -10,8 +10,8 @@
     <a-scene environment="preset: forest; lighting: point;">
       
       <a-assets>
-        <img id="downtown-seoul" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Seoul_at_night_from_N_Seoul_Tower.jpg/2560px-Seoul_at_night_from_N_Seoul_Tower.jpg">
-        <audio id="ambient-noise" src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" preload="auto"></audio>
+        <img id="downtown-seoul" src="https://cdn.aframe.io/360-image-gallery-thumbnail-generator/cubes.jpg" crossorigin="anonymous">
+        <audio id="ambient-noise" src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" preload="auto" crossorigin="anonymous"></audio>
       </a-assets>
 
       <a-sky id="vr-sky" src="#downtown-seoul" rotation="0 -90 0"></a-sky>
@@ -34,14 +34,14 @@
         <a-plane width="2.5" height="1.8" color="#111c24" opacity="0.95" material="side: double; transparent: true;"></a-plane>
         <a-plane width="2.6" height="1.9" color="#00FFCC" position="0 0 -0.01" material="side: double;"></a-plane>
         <a-text value="GEOGRAPHIC IMPETUS\n\nPull Factor: Urban Reimaging\nSeoul utilizes high-tech infrastructure and K-Culture to draw international tourism.\n\nTask: Observe the spatial cluster of retail networks surrounding you." 
-                align="center" width="2.2" color="#FFFFFF" font="msdf" position="0 0 0.05"></a-text>
+                align="center" width="2.2" color="#FFFFFF" position="0 0 0.05"></a-text>
       </a-entity>
 
       <a-entity id="station-challenge" position="3 2 -4" rotation="0 -25 0">
         <a-plane width="2.5" height="1.8" color="#241111" opacity="0.95" material="side: double; transparent: true;"></a-plane>
         <a-plane width="2.6" height="1.9" color="#FF3333" position="0 0 -0.01" material="side: double;"></a-plane>
         <a-text value="DESTINATION CHALLENGES\n\nImpact: Carrying Capacity Exceeded\nHistoric districts like Bukchon face socio-cultural friction, residential displacement, and acoustic pollution.\n\nTask: Identify three physical signs of tourism conflict." 
-                align="center" width="2.2" color="#FFFFFF" font="msdf" position="0 0 0.05"></a-text>
+                align="center" width="2.2" color="#FFFFFF" position="0 0 0.05"></a-text>
       </a-entity>
 
       <a-entity id="toggle-button" position="0 0.5 -3"
@@ -49,7 +49,7 @@
                 event-set__mouseleave="_event: mouseleave; scale: 1 1 1"
                 event-set__click="_target: #vr-sky; material.color: #775555;">
         <a-box width="1.2" height="0.4" depth="0.3" color="#FFBB00"></a-box>
-        <a-text value="SIMULATE IMPACTS" align="center" width="2.5" color="#000" font="msdf" position="0 0 0.16"></a-text>
+        <a-text value="SIMULATE IMPACTS" align="center" width="2.5" color="#000000" position="0 0 0.16"></a-text>
       </a-entity>
 
     </a-scene>
